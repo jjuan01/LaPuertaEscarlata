@@ -1,0 +1,14 @@
+body {
+  background: #000;
+}
+.container {
+  background: #ff0;
+  text-align: center;
+}
+h1 {
+  font-family: 'Dancing Script';
+  color: #ff0040;
+}
+section {
+  background: #ffa500;
+}
