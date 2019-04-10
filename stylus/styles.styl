@@ -1,0 +1,50 @@
+body
+  background: black
+
+main
+  display: grid
+  grid-template: 12em 1fr 1fr / 1fr 3fr 1fr
+  grid-gap: 5px
+  grid-template-areas: "header header header" "left content right" "footer footer footer"
+  
+  // align-items: center
+  justify-items: center
+
+header
+  grid-area: header
+  justify-items: center
+  align-items: center
+
+  & h1
+    font-family: 'Great Vibes', cursive
+    font-weight: normal
+    font-size: 5em
+    text-align: center
+    color: #ff0040
+
+section
+  grid-area: content
+  font-family: 'Merienda'
+
+  
+
+  & .post
+    background-image: url('../assets/images/notebook_background.jpg')
+    background-repeat: repeat-y
+    background-size: cover
+    padding: 2.7em
+
+    & h1
+      font-family: 'Merienda', cursive
+      color: black
+      text-align: right
+      // margin: 2em
+      // margin-top: 4em
+    & p
+      color: black
+      text-align: justify
+      // margin-left: 6em
+
+    & .content
+      margin-left: 8em
+
