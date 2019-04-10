@@ -1,14 +1,35 @@
 body {
   background: #000;
 }
-.container {
-  background: #ff0;
-  text-align: center;
+main {
+  display: grid;
+  grid-template: 12em 1fr 1fr/1fr 3fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas: "header header header" "left content right" "footer footer footer";
 }
-h1 {
-  font-family: 'Dancing Script';
+header {
+  grid-area: header;
+  justify-items: center;
+  align-items: center;
+}
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+  font-size: 5em;
+  text-align: center;
   color: #ff0040;
 }
 section {
-  background: #ffa500;
+  grid-area: content;
+}
+section h1 {
+  font-family: 'Merienda', cursive;
+  color: #fff;
+  text-align: right;
+  margin: 2em;
+}
+section p {
+  color: #fff;
+  text-align: justify;
+  margin: 0.7em;
 }
