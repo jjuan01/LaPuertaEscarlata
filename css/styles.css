@@ -6,6 +6,7 @@ main {
   grid-template: 12em 1fr 1fr/1fr 3fr 1fr;
   grid-gap: 5px;
   grid-template-areas: "header header header" "left content right" "footer footer footer";
+  justify-items: center;
 }
 header {
   grid-area: header;
@@ -23,14 +24,21 @@ section {
   grid-area: content;
   font-family: 'Merienda';
 }
-section h1 {
-  font-family: 'Merienda', cursive;
-  color: #fff;
-  text-align: right;
-  margin: 2em;
+section .post {
+  background-image: url("../assets/images/notebook_background.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  padding: 2.7em;
 }
-section p {
-  color: #fff;
+section .post h1 {
+  font-family: 'Merienda', cursive;
+  color: #000;
+  text-align: right;
+}
+section .post p {
+  color: #000;
   text-align: justify;
-  margin: 0.7em;
+}
+section .post .content {
+  margin-left: 8em;
 }
