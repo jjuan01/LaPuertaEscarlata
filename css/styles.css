@@ -21,6 +21,7 @@ header h1 {
 }
 section {
   grid-area: content;
+  font-family: 'Merienda';
 }
 section h1 {
   font-family: 'Merienda', cursive;
