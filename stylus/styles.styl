@@ -1,4 +1,5 @@
 body
+<<<<<<< HEAD
   background: black
 
 main
@@ -14,6 +15,12 @@ header
   grid-area: header
   justify-items: center
   align-items: center
+=======
+  background: #e8a2a2
+
+  
+header
+>>>>>>> paper-background-css
 
   & h1
     font-family: 'Great Vibes', cursive
@@ -22,6 +29,7 @@ header
     text-align: center
     color: #ff0040
 
+<<<<<<< HEAD
 section
   grid-area: content
   font-family: 'Merienda'
@@ -47,4 +55,66 @@ section
 
     & .content
       margin-left: 8em
+=======
+main
+  display: grid
+  grid-template-columns: 1fr 3fr 1fr
+  grid-template-areas: "left content right"
+  justify-items: center 
+
+article
+  grid-area: content
+  font-family: 'Merienda'
+  position: relative
+  height: 1280px
+  width: 720px
+  background: #e8a2a2
+  box-shadow: 0px 0px 5px 0px #888
+
+  & h1
+    font-family: 'Merienda', cursive
+    text-align: right
+    margin: 1em
+
+article::before 
+  content: ''
+  position: absolute
+  left: 45px
+  height: 100%
+  width: 2px
+  background: rgba(255,0,0,0.4)
+
+.lines 
+  height: calc(100%)
+  width: 100%
+  background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px)
+
+.text 
+  position: absolute
+  top: 52px
+  left: 55px
+  bottom: 10px
+  right: 10px
+  line-height: 25px
+  overflow: hidden
+  outline: none
+
+.holes 
+  position: absolute
+  left: 10px
+  height: 25px
+  width: 25px
+  background: #e8a2a2
+  border-radius: 50%
+  box-shadow: inset 0px 0px 2px 0px #888
+
+.hole-top 
+  top: 10%
+
+.hole-middle 
+  top: 50%
+
+.hole-bottom 
+  bottom: 10%
+>>>>>>> paper-background-css
 
