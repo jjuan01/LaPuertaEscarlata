@@ -1,5 +1,5 @@
 body {
-  background: #e8a2a2;
+  background: #ffe2ee;
 }
 header h1 {
   font-family: 'Great Vibes', cursive;
@@ -12,21 +12,27 @@ main {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas: "left content right";
-  justify-items: center;
 }
 article {
   grid-area: content;
   font-family: 'Merienda';
   position: relative;
-  height: 1280px;
-  width: 720px;
-  background: #e8a2a2;
-  box-shadow: 0px 0px 5px 0px #888;
+  left: 40%;
+  width: 500px;
+  box-shadow: 0px 0px 10px 0px #888;
+  background-image: repeating-linear-gradient(#fff 0px, #fff 19px, #4682b4 20px);
 }
 article h1 {
   font-family: 'Merienda', cursive;
   text-align: right;
-  margin: 1em;
+  margin: 0.5em 1em 0 0;
+}
+article p {
+  margin-left: 3.3em;
+  margin-right: 0.3em;
+  line-height: 20px;
+  overflow: hidden;
+  outline: none;
 }
 article::before {
   content: '';
@@ -36,29 +42,14 @@ article::before {
   width: 2px;
   background: rgba(255,0,0,0.4);
 }
-.lines {
-  height: calc(100%);
-  width: 100%;
-  background-image: repeating-linear-gradient(#fff 0px, #fff 24px, #4682b4 25px);
-}
-.text {
-  position: absolute;
-  top: 52px;
-  left: 55px;
-  bottom: 10px;
-  right: 10px;
-  line-height: 25px;
-  overflow: hidden;
-  outline: none;
-}
 .holes {
   position: absolute;
   left: 10px;
   height: 25px;
   width: 25px;
-  background: #e8a2a2;
+  background: #ffe2ee;
   border-radius: 50%;
-  box-shadow: inset 0px 0px 2px 0px #888;
+  box-shadow: inset 0px 0px 10px 0px #888;
 }
 .hole-top {
   top: 10%;
