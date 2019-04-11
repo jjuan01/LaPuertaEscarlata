@@ -10,29 +10,44 @@ header h1 {
 }
 main {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: "left content right";
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-areas: "left panel content right";
 }
-article {
+.panel {
+  grid-area: panel;
+}
+.post {
   grid-area: content;
   font-family: 'Merienda';
+}
+article {
   position: relative;
-  left: 40%;
   width: 500px;
   box-shadow: 0px 0px 10px 0px #888;
   background-image: repeating-linear-gradient(#fff 0px, #fff 19px, #4682b4 20px);
+  padding-bottom: 1em;
 }
 article h1 {
   font-family: 'Merienda', cursive;
   text-align: right;
-  margin: 0.5em 1em 0 0;
+  margin: 0.9em 1em 0 0;
+  font-size: 2.3em;
 }
 article p {
-  margin-left: 3.3em;
-  margin-right: 0.3em;
+  margin: 2em 0.3em 0 3.3em;
   line-height: 20px;
   overflow: hidden;
   outline: none;
+}
+article .publication {
+  display: inline;
+  margin-left: 3.3em;
+}
+article .publication .author {
+  display: inline-block;
+}
+article .publication .date {
+  float: right;
 }
 article::before {
   content: '';
@@ -59,4 +74,12 @@ article::before {
 }
 .hole-bottom {
   bottom: 10%;
+}
+.comment-btn {
+  float: right;
+  margin: 1em;
+}
+.btn-outline-danger {
+  color: #ff0040;
+  border-color: #ff0040;
 }
