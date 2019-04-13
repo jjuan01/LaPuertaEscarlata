@@ -1,6 +1,10 @@
 body {
   background: #ffe2ee;
 }
+header {
+  background-color: #ffe2ee;
+  color: #ff0040;
+}
 header h1 {
   font-family: 'Great Vibes', cursive;
   font-weight: normal;
@@ -8,10 +12,20 @@ header h1 {
   text-align: center;
   color: #ff0040;
 }
+header #header {
+  margin-bottom: 1em;
+}
+header nav a {
+  color: #ff0040;
+}
+header nav a:hover {
+  color: #ff0040;
+}
 main {
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
-  grid-template-areas: "left panel content right";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "left  content right";
+  justify-items: center;
 }
 .panel {
   grid-area: panel;
@@ -30,21 +44,21 @@ article {
 article h1 {
   font-family: 'Merienda', cursive;
   text-align: right;
-  margin: 0.9em 1em 0 0;
+  margin: 1em 1em 0 0;
   font-size: 2.3em;
 }
 article p {
-  margin: 2em 0.3em 0 3.3em;
+  margin: 2.1em 0.3em 0 3.3em;
   line-height: 20px;
   overflow: hidden;
   outline: none;
 }
 article .publication {
   display: inline;
-  margin-left: 3.3em;
 }
 article .publication .author {
   display: inline-block;
+  margin-left: 3.3em;
 }
 article .publication .date {
   float: right;
