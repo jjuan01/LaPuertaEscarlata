@@ -2,23 +2,28 @@ body {
   background: #ffe2ee;
 }
 header {
-  background-color: #ffe2ee;
   color: #ff0040;
 }
 header h1 {
   font-family: 'Great Vibes', cursive;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 5em;
   text-align: center;
   color: #ff0040;
+  height: 0.6em;
 }
-header #header {
+nav {
+  background-color: #ffe2ee;
+  color: #ff0040;
   margin-bottom: 1em;
+  width: calc(500px + 2em);
+  height: 2em;
+  margin: 3em auto 1em auto;
 }
-header nav a {
+nav a {
   color: #ff0040;
 }
-header nav a:hover {
+nav a:hover {
   color: #ff0040;
 }
 main {

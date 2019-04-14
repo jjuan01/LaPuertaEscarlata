@@ -7,23 +7,32 @@ body
 
 header
   // display: grid
-  // grid-template-rows: 2fr 1fr 
-  background-color: backgroundColor
+  // grid-template-rows: 1fr 1fr
+  // grid-template-areas: "tittle" "navigation"
+  // grid-gap: 1em
+  // justify-items: center
   color: mainColor
   & h1
+    // grid-area: "tittle"
     font-family: 'Great Vibes', cursive
-    font-weight: normal
+    font-weight: bold
     font-size: 5em
     text-align: center
     color: mainColor  
+    height: 0.6em
+nav
+  // grid-area: "navigation"
+  background-color: backgroundColor
+  color: mainColor
+  margin-bottom: 1em
+  width: "calc(%s + 2em)" % postWidth
+  height: 2em
+  margin: 3em auto 1em auto
+  & a
+    color: mainColor
 
-  & #header
-    margin-bottom: 1em
-  & nav 
-    & a
-      color: mainColor
-    & a:hover
-      color: mainColor
+  & a:hover
+    color: mainColor
 
 main
   display: grid
