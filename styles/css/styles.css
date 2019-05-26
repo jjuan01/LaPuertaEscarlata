@@ -13,6 +13,8 @@ header h1 {
   height: 0.6em;
 }
 nav {
+  font-size: 22px;
+  font-family: 'Great Vibes', cursive;
   background-color: #ffe2ee;
   color: #ff0040;
   margin-bottom: 1em;
@@ -25,6 +27,9 @@ nav a {
 }
 nav a:hover {
   color: #ff0040;
+}
+nav a:active {
+  color: #fff;
 }
 main {
   display: grid;
